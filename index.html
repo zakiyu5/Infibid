@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infibird Concepts Limited | Medical, Lab, Electrical, AC & ICT Solutions in Uganda</title>
+  <meta name="description" content="Infibird Concepts Limited, Kampala. Supplier of medical and laboratory equipment, lab consumables, electrical and plumbing, air conditioning and ICT services in Uganda.">
+  <meta name="keywords" content="Infibird Concepts, laboratory equipment Uganda, medical equipment Kampala, lab consumables, air conditioning installation Kampala, ICT services Uganda, electrical and plumbing">
+  <meta name="theme-color" content="#0b2a55">
+  <meta property="og:title" content="Infibird Concepts Limited | All In One Engineering Services">
+  <meta property="og:description" content="Medical & lab equipment, electrical & plumbing, air conditioning and ICT solutions in Kampala, Uganda.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/svc-lab.jpg">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+/* =========================================================
+   Infibird Concepts Limited stylesheet
+   ========================================================= */
+:root {
+  --navy-900: #071d3d;
+  --navy-800: #0b2a55;
+  --navy-700: #123a72;
+  --blue-500: #1d6fd1;
+  --blue-400: #4aa3ff;
+  --green-500: #2fb36b;
+  --green-600: #23965a;
+  --ink: #12213a;
+  --muted: #5b6b82;
+  --line: #e3e9f2;
+  --bg: #ffffff;
+  --bg-soft: #f4f7fb;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --shadow-sm: 0 2px 10px rgba(11, 42, 85, .06);
+  --shadow: 0 12px 34px rgba(11, 42, 85, .12);
+  --shadow-lg: 0 24px 60px rgba(7, 29, 61, .22);
+  --font-head: "Poppins", system-ui, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --header-h: 76px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; margin: 0 0 .5em; color: var(--navy-800); }
+h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 700; letter-spacing: -.02em; }
+h2 { font-size: clamp(1.65rem, 3.4vw, 2.5rem); font-weight: 700; letter-spacing: -.01em; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+p { margin: 0 0 1em; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section { padding: clamp(64px, 9vw, 110px) 0; }
+
+.ico { width: 15px; height: 15px; fill: currentColor; vertical-align: -2px; flex-shrink: 0; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5em;
+  padding: .8em 1.5em; border-radius: 999px; border: 2px solid transparent;
+  font-family: var(--font-head); font-weight: 600; font-size: .95rem;
+  cursor: pointer; transition: transform .2s, box-shadow .2s, background .2s, color .2s, border-color .2s;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn--lg { padding: 1em 1.9em; font-size: 1rem; }
+.btn--block { width: 100%; }
+.btn--primary { background: var(--navy-800); color: #fff; }
+.btn--primary:hover { background: var(--navy-700); box-shadow: var(--shadow); }
+.btn--accent { background: var(--green-500); color: #fff; }
+.btn--accent:hover { background: var(--green-600); box-shadow: 0 10px 24px rgba(47, 179, 107, .35); }
+.btn--ghost { border-color: rgba(255,255,255,.6); color: #fff; }
+.btn--ghost:hover { background: #fff; color: var(--navy-800); }
+.btn--white { background: #fff; color: var(--navy-800); }
+.btn--white:hover { box-shadow: var(--shadow-lg); }
+
+.eyebrow {
+  display: inline-block; font-family: var(--font-head); font-weight: 600;
+  font-size: .8rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--blue-500); margin-bottom: .8rem;
+  padding-left: 34px; position: relative;
+}
+.eyebrow::before { content: ""; position: absolute; left: 0; top: 50%; width: 24px; height: 2px; background: var(--green-500); }
+.eyebrow--light { color: var(--blue-400); }
+
+/* ---------- Top bar ---------- */
+.topbar { background: var(--navy-900); color: #b9c8de; font-size: .83rem; }
+.topbar__inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-top: 8px; padding-bottom: 8px; }
+.topbar span, .topbar a { display: inline-flex; align-items: center; gap: 6px; }
+.topbar__right { display: flex; gap: 1.4rem; }
+.topbar a:hover { color: #fff; }
+
+/* ---------- Header ---------- */
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent; transition: box-shadow .3s, border-color .3s;
+}
+.header.scrolled { box-shadow: var(--shadow-sm); border-color: var(--line); }
+.header__inner { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); }
+
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand__text { display: flex; flex-direction: column; line-height: 1.05; }
+.brand__text strong { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; color: var(--navy-800); letter-spacing: .04em; }
+.brand__text small { font-family: var(--font-head); font-weight: 600; font-size: .62rem; letter-spacing: .2em; color: var(--blue-500); }
+.brand--light .brand__text strong { color: #fff; }
+.brand--light .brand__text small { color: var(--blue-400); }
+
+.nav { display: flex; align-items: center; gap: 4px; }
+.nav__link {
+  font-family: var(--font-head); font-weight: 500; font-size: .93rem; color: var(--ink);
+  padding: 8px 14px; border-radius: 8px; position: relative; transition: color .2s;
+}
+.nav__link::after {
+  content: ""; position: absolute; left: 14px; right: 14px; bottom: 2px; height: 2px;
+  background: var(--green-500); transform: scaleX(0); transition: transform .25s; transform-origin: left;
+}
+.nav__link:hover, .nav__link.active { color: var(--blue-500); }
+.nav__link.active::after, .nav__link:hover::after { transform: scaleX(1); }
+.nav__cta { margin-left: 10px; padding: .65em 1.3em; }
+
+.burger { display: none; width: 44px; height: 44px; border: 0; background: transparent; cursor: pointer; padding: 10px; border-radius: 8px; }
+.burger span { display: block; height: 2px; background: var(--navy-800); border-radius: 2px; transition: transform .3s, opacity .3s; }
+.burger span + span { margin-top: 6px; }
+.burger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; color: #fff; overflow: hidden; background: var(--navy-800); }
+.hero__bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(900px 500px at 85% 20%, rgba(74,163,255,.28), transparent 60%),
+    radial-gradient(600px 400px at 10% 90%, rgba(47,179,107,.18), transparent 60%),
+    linear-gradient(135deg, var(--navy-900), var(--navy-800) 55%, var(--navy-700));
+}
+.hero__bg::after {
+  content: ""; position: absolute; inset: 0; opacity: .08;
+  background-image: linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, #000, transparent 85%);
+  -webkit-mask-image: linear-gradient(to bottom, #000, transparent 85%);
+}
+.hero__inner {
+  position: relative; display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center;
+  padding-top: clamp(56px, 8vw, 100px); padding-bottom: clamp(70px, 9vw, 120px);
+}
+.hero h1 { color: #fff; }
+.hero .hl { background: linear-gradient(90deg, var(--blue-400), #7fe0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero__lead { font-size: clamp(1rem, 1.6vw, 1.15rem); color: #c9d6ea; max-width: 560px; margin-bottom: 2rem; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero__tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 2.2rem 0 0; }
+.hero__tags li {
+  font-size: .82rem; font-weight: 600; letter-spacing: .05em; padding: 6px 14px; border-radius: 999px;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); color: #dce6f5;
+}
+.hero__tags li::before { content: "●"; color: var(--green-500); margin-right: 7px; font-size: .7em; vertical-align: 2px; }
+
+.hero__visual { position: relative; height: 440px; }
+.hero__card { position: absolute; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); border: 4px solid rgba(255,255,255,.95); background: #fff; }
+.hero__card img { width: 100%; height: 100%; object-fit: cover; }
+.hero__card--main { inset: 0 0 auto 8%; height: 62%; }
+.hero__card--a { left: 0; bottom: 0; width: 52%; height: 44%; }
+.hero__card--b { right: 0; bottom: 6%; width: 44%; height: 38%; }
+.hero__badge {
+  position: absolute; left: 44%; top: 54%; transform: translate(-50%, -50%);
+  background: var(--green-500); color: #fff; border-radius: var(--radius); padding: 14px 18px;
+  display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-lg); z-index: 2;
+}
+.hero__badge strong { font-family: var(--font-head); font-size: 2.2rem; line-height: 1; }
+.hero__badge span { font-size: .8rem; line-height: 1.25; font-weight: 600; }
+
+/* ---------- Strip ---------- */
+.strip { background: var(--bg); border-bottom: 1px solid var(--line); position: relative; z-index: 2; }
+.strip__inner { display: grid; grid-template-columns: repeat(5, 1fr); }
+.strip__item {
+  display: flex; align-items: center; gap: 10px; padding: 22px 14px;
+  font-family: var(--font-head); font-weight: 600; font-size: .9rem; color: var(--navy-800);
+  border-right: 1px solid var(--line);
+}
+.strip__item:last-child { border-right: 0; }
+.strip__ico {
+  width: 38px; height: 38px; flex-shrink: 0; border-radius: 10px; display: grid; place-items: center;
+  background: #e8f1fd; color: var(--blue-500); font-size: 1.1rem;
+}
+
+/* ---------- Section heads ---------- */
+.section__head { text-align: center; max-width: 680px; margin: 0 auto 52px; }
+.section__head .eyebrow { padding-left: 0; }
+.section__head .eyebrow::before { display: none; }
+.section__head p { color: var(--muted); font-size: 1.05rem; }
+.section__head--light h2 { color: #fff; }
+
+/* ---------- About ---------- */
+.about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.about__media { position: relative; min-height: 440px; }
+.about__img { position: absolute; border-radius: var(--radius); box-shadow: var(--shadow); object-fit: cover; border: 5px solid #fff; }
+.about__img--1 { top: 0; left: 0; width: 78%; height: 62%; }
+.about__img--2 { bottom: 0; right: 0; width: 62%; height: 52%; }
+.about__media::before {
+  content: ""; position: absolute; left: 12%; bottom: 6%; width: 120px; height: 120px; border-radius: 20px;
+  background: repeating-linear-gradient(45deg, var(--green-500) 0 2px, transparent 2px 10px); opacity: .35;
+}
+.about__text p { color: var(--muted); }
+.about__text p strong { color: var(--ink); }
+.checklist { list-style: none; padding: 0; margin: 1.4rem 0 2rem; }
+.checklist li { position: relative; padding-left: 34px; margin-bottom: 12px; font-weight: 500; }
+.checklist li::before {
+  content: "✓"; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--green-500); color: #fff; font-size: .75rem; font-weight: 700; display: grid; place-items: center;
+}
+
+/* ---------- Services ---------- */
+.services { background: var(--bg-soft); }
+.services__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.svc {
+  background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm);
+  border: 1px solid var(--line); transition: transform .3s, box-shadow .3s; display: flex; flex-direction: column;
+}
+.svc:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.svc__img { aspect-ratio: 16 / 9; overflow: hidden; background: #eef2f7; }
+.svc__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.svc:hover .svc__img img { transform: scale(1.06); }
+.svc__body { padding: 24px 24px 28px; position: relative; flex: 1; }
+.svc__num {
+  position: absolute; top: -22px; right: 22px; width: 46px; height: 46px; border-radius: 12px;
+  background: var(--navy-800); color: #fff; display: grid; place-items: center;
+  font-family: var(--font-head); font-weight: 700; font-size: .95rem; box-shadow: var(--shadow);
+}
+.svc__body p { color: var(--muted); margin: 0; font-size: .95rem; }
+.svc--cta {
+  background: linear-gradient(145deg, var(--navy-800), var(--navy-700)); border: 0; color: #fff;
+  justify-content: center;
+}
+.svc--cta .svc__body { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 36px 30px; }
+.svc--cta h3 { color: #fff; font-size: 1.4rem; }
+.svc--cta p { color: #c9d6ea; margin-bottom: 1.5rem; }
+.svc__wa { margin-top: 14px; font-size: .9rem; color: #9fe3bd; font-weight: 600; }
+.svc__wa:hover { color: #fff; }
+
+/* ---------- Products ---------- */
+.tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+.tab {
+  font-family: var(--font-head); font-weight: 600; font-size: .9rem; cursor: pointer;
+  padding: .7em 1.4em; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; color: var(--navy-800);
+  transition: all .2s;
+}
+.tab:hover { border-color: var(--blue-500); color: var(--blue-500); }
+.tab.active { background: var(--navy-800); border-color: var(--navy-800); color: #fff; }
+
+.products__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.prod {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  transition: transform .3s, box-shadow .3s, opacity .3s; display: flex; flex-direction: column;
+}
+.prod:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.prod.hide { display: none; }
+.prod__img { aspect-ratio: 4 / 3; background: #f3f6fa; overflow: hidden; }
+.prod__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.prod:hover .prod__img img { transform: scale(1.05); }
+.prod__body { padding: 18px 18px 22px; }
+.prod__body h3 { font-size: 1rem; margin-bottom: .4em; overflow-wrap: anywhere; hyphens: auto; }
+.prod__body p { font-size: .88rem; color: var(--muted); margin: 0; }
+.prod__tag {
+  display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--blue-500); background: #e8f1fd; padding: 3px 10px; border-radius: 999px; margin-bottom: 10px;
+}
+.prod__tag--alt { color: var(--green-600); background: #e6f6ed; }
+.products__more {
+  margin-top: 48px; padding: 28px 32px; border-radius: var(--radius); background: var(--bg-soft);
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+}
+.products__more p { margin: 0; font-weight: 500; color: var(--navy-800); }
+
+/* ---------- Why ---------- */
+.why { background: linear-gradient(135deg, var(--navy-900), var(--navy-800)); color: #fff; position: relative; overflow: hidden; }
+.why::before {
+  content: ""; position: absolute; width: 520px; height: 520px; border-radius: 50%; right: -160px; top: -200px;
+  background: radial-gradient(circle, rgba(74,163,255,.22), transparent 70%);
+}
+.why__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; position: relative; }
+.why__item {
+  padding: 30px 26px; border-radius: var(--radius); background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1); transition: background .3s, transform .3s;
+}
+.why__item:hover { background: rgba(255,255,255,.09); transform: translateY(-4px); }
+.why__ico { width: 54px; height: 54px; border-radius: 14px; background: var(--green-500); display: grid; place-items: center; margin-bottom: 18px; }
+.why__ico svg { width: 26px; height: 26px; fill: #fff; }
+.why__item h3 { color: #fff; }
+.why__item p { color: #b9c8de; margin: 0; font-size: .95rem; }
+
+/* ---------- Brands ---------- */
+.brands { padding: 42px 0; border-bottom: 1px solid var(--line); }
+.brands__label { text-align: center; text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 600; color: var(--muted); margin-bottom: 20px; }
+.brands__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 34px; }
+.brands__row span { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; color: #9aa9be; transition: color .2s; }
+.brands__row span:hover { color: var(--navy-800); }
+
+/* ---------- CTA ---------- */
+.cta { background: linear-gradient(100deg, var(--blue-500), var(--navy-700)); color: #fff; padding: 56px 0; }
+.cta__inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
+.cta h2 { color: #fff; margin-bottom: .25em; }
+.cta p { margin: 0; color: #dce8fb; }
+.cta__actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* ---------- Contact ---------- */
+.contact__grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 40px; align-items: start; }
+.contact__info { display: flex; flex-direction: column; gap: 16px; }
+.info { display: flex; gap: 16px; padding: 20px; border-radius: var(--radius); background: var(--bg-soft); border: 1px solid var(--line); }
+.info__ico { width: 48px; height: 48px; border-radius: 12px; background: var(--navy-800); display: grid; place-items: center; flex-shrink: 0; }
+.info__ico svg { width: 22px; height: 22px; fill: #fff; }
+.info h3 { font-size: 1rem; margin-bottom: .2em; }
+.info p { margin: 0; color: var(--muted); font-size: .95rem; word-break: break-word; }
+.info a:hover { color: var(--blue-500); }
+.map { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: var(--bg-soft); }
+.map iframe { display: block; width: 100%; height: 260px; border: 0; }
+.map__link { display: block; padding: 14px 18px; font-family: var(--font-head); font-weight: 600; font-size: .92rem; color: var(--blue-500); background: #fff; border-top: 1px solid var(--line); }
+.map__link:hover { color: var(--navy-800); }
+
+.form { background: #fff; border-radius: var(--radius); padding: clamp(24px, 4vw, 40px); box-shadow: var(--shadow); border: 1px solid var(--line); }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { margin-bottom: 18px; }
+.field label { display: block; font-weight: 600; font-size: .88rem; margin-bottom: 6px; color: var(--navy-800); }
+.field input, .field select, .field textarea {
+  width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: var(--bg-soft);
+  border: 1.5px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.field textarea { resize: vertical; min-height: 120px; }
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; border-color: var(--blue-500); background: #fff; box-shadow: 0 0 0 4px rgba(29,111,209,.12);
+}
+.field.invalid input, .field.invalid textarea { border-color: #d64545; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.form__status { margin: 14px 0 0; font-weight: 500; font-size: .95rem; min-height: 1.4em; }
+.form__status.ok { color: var(--green-600); }
+.form__status.err { color: #c53030; }
+.form button[disabled] { opacity: .7; cursor: wait; }
+
+/* ---------- Footer ---------- */
+.footer { background: var(--navy-900); color: #b9c8de; padding-top: 64px; font-size: .93rem; }
+.footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1.1fr 1.3fr; gap: 36px; padding-bottom: 48px; }
+.footer h4 { color: #fff; font-size: 1rem; margin-bottom: 1rem; }
+.footer ul { list-style: none; padding: 0; margin: 0; }
+.footer li { margin-bottom: 9px; word-break: break-word; }
+.footer a:hover { color: #fff; }
+.footer__about { margin-top: 16px; max-width: 320px; }
+.footer__bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 20px 0; font-size: .85rem; }
+.footer__bottom-in { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.footer__staff { color: #7f93b2; }
+.footer__staff:hover { color: #fff; }
+
+/* ---------- Floating buttons ---------- */
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 90; width: 58px; height: 58px; border-radius: 50%;
+  background: #25d366; display: grid; place-items: center; box-shadow: 0 10px 26px rgba(37,211,102,.45);
+  transition: transform .2s;
+}
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 32px; height: 32px; fill: #fff; }
+.to-top {
+  position: fixed; right: 27px; bottom: 90px; z-index: 90; width: 44px; height: 44px; border-radius: 50%; border: 0;
+  background: var(--navy-800); color: #fff; font-size: 1.2rem; cursor: pointer; box-shadow: var(--shadow);
+  opacity: 0; visibility: hidden; transform: translateY(10px); transition: all .3s;
+}
+.to-top.show { opacity: 1; visibility: visible; transform: none; }
+
+/* ---------- Reveal animation ---------- */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+.no-js .reveal { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { transition-duration: .01ms !important; }
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 1100px) {
+  .products__grid { grid-template-columns: repeat(3, 1fr); }
+  .strip__inner { grid-template-columns: repeat(3, 1fr); }
+  .strip__item:nth-child(3) { border-right: 0; }
+  .strip__item:nth-child(-n+3) { border-bottom: 1px solid var(--line); }
+}
+
+@media (max-width: 960px) {
+  :root { --header-h: 68px; }
+  .burger { display: block; }
+  .nav {
+    position: fixed; top: var(--header-h); left: 0; right: 0; bottom: 0;
+    flex-direction: column; align-items: stretch; gap: 4px; padding: 20px;
+    background: #fff; transform: translateX(100%); transition: transform .35s ease; overflow-y: auto;
+  }
+  .nav.open { transform: none; }
+  .nav__link { padding: 14px 16px; font-size: 1.05rem; border-bottom: 1px solid var(--line); border-radius: 0; }
+  .nav__link::after { display: none; }
+  .nav__cta { margin: 16px 0 0; padding: 1em; }
+  body.menu-open { overflow: hidden; }
+
+  .hero__inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero__visual { height: 380px; max-width: 560px; width: 100%; margin: 0 auto; }
+  .about__grid { grid-template-columns: 1fr; gap: 40px; }
+  .about__media { min-height: 380px; max-width: 560px; width: 100%; margin: 0 auto; }
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .why__grid { grid-template-columns: repeat(2, 1fr); }
+  .contact__grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 720px) {
+  .topbar__inner > span:first-child { display: none; }
+  .topbar__inner { justify-content: center; }
+  .products__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .prod__body { padding: 14px 14px 18px; }
+  .prod__body p { font-size: .82rem; }
+  .strip__inner { grid-template-columns: 1fr 1fr; }
+  .strip__item { border-right: 1px solid var(--line) !important; border-bottom: 1px solid var(--line); font-size: .82rem; padding: 16px 10px; }
+  .strip__item:nth-child(2n) { border-right: 0 !important; }
+  .strip__item:last-child { grid-column: 1 / -1; border-bottom: 0; border-right: 0 !important; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+  .topbar__right { gap: .9rem; font-size: .76rem; }
+  .topbar__right a:first-child { display: none; }
+  .brand__text strong { font-size: 1.1rem; }
+  .hero__actions .btn { flex: 1 1 100%; }
+  .hero__visual { height: 300px; }
+  .hero__badge { padding: 10px 14px; }
+  .hero__badge strong { font-size: 1.7rem; }
+  .about__media { min-height: 300px; }
+  .services__grid, .why__grid { grid-template-columns: 1fr; }
+  .form__row { grid-template-columns: 1fr; gap: 0; }
+  .cta__actions, .cta__actions .btn { width: 100%; }
+  .products__more { padding: 22px; }
+  .products__more .btn { width: 100%; }
+  .footer__grid { grid-template-columns: 1fr; gap: 28px; }
+  .wa-float { width: 52px; height: 52px; right: 16px; bottom: 16px; }
+  .to-top { right: 20px; bottom: 80px; }
+}
+
+@media (max-width: 380px) {
+  .products__grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- ===== Top bar ===== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span><svg class="ico" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Bukoto, Kampala, Uganda</span>
+      <span class="topbar__right">
+        <a href="mailto:infibirdconcepts@gmail.com"><svg class="ico" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg> infibirdconcepts@gmail.com</a>
+        <a href="tel:+256756895960"><svg class="ico" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg> +256 756 895 960</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand" aria-label="Infibird Concepts home">
+        <img src="images/logo.svg" alt="" width="42" height="42">
+        <span class="brand__text">
+          <strong>INFIBIRD</strong>
+          <small>CONCEPTS LIMITED</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#products" class="nav__link">Products</a>
+        <a href="#why" class="nav__link">Why Us</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--accent nav__cta">Request a Quote</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="eyebrow eyebrow--light">All In One Engineering Services</span>
+          <h1>Your Trusted Partner for <span class="hl">Engineering Solutions</span></h1>
+          <p class="hero__lead">We supply, install and maintain medical and laboratory equipment, electrical and plumbing systems, air conditioning and ICT for facilities across Uganda.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--accent btn--lg">Request a Quote</a>
+            <a href="#products" class="btn btn--ghost btn--lg">View Products</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__card hero__card--main">
+            <img data-slot="hero_main" src="images/svc-lab.jpg" alt="Laboratory instruments and consumables">
+          </div>
+          <div class="hero__card hero__card--a">
+            <img data-slot="hero_small_1" src="images/svc-ict.jpg" alt="ICT servers and networking equipment">
+          </div>
+          <div class="hero__card hero__card--b">
+            <img data-slot="hero_small_2" src="images/svc-ac.jpg" alt="Air conditioning units">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Strip ===== -->
+    <section class="strip">
+      <div class="container strip__inner">
+        <div class="strip__item"><span class="strip__ico">✚</span>Medical Equipment</div>
+        <div class="strip__item"><span class="strip__ico">⚗</span>Lab Equipment &amp; Consumables</div>
+        <div class="strip__item"><span class="strip__ico">⚡</span>Electrical &amp; Plumbing</div>
+        <div class="strip__item"><span class="strip__ico">❄</span>Air Conditioning</div>
+        <div class="strip__item"><span class="strip__ico">⌘</span>ICT Equipment &amp; Services</div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <img data-slot="about_1" src="images/hematology.jpg" alt="Mindray hematology analyzer" class="about__img about__img--1">
+          <img data-slot="about_2" src="images/microscope.jpg" alt="Olympus microscope" class="about__img about__img--2">
+        </div>
+        <div class="about__text reveal">
+          <span class="eyebrow">About Us</span>
+          <h2>One partner for your facility's equipment and engineering needs</h2>
+          <p><strong>Infibird Concepts Limited</strong> is a Ugandan company based in Bukoto, Kampala. We supply medical equipment, laboratory equipment and consumables, and ICT equipment. We also handle electrical, plumbing and air conditioning work.</p>
+          <p>Hospitals, clinics, laboratories, schools and offices come to us because we handle the whole job. We source from trusted brands, deliver, install and maintain, so you only deal with one team.</p>
+          <ul class="checklist">
+            <li>Trusted brands: Mindray, Olympus, Hettich, Memmert, Esco, Haier &amp; more</li>
+            <li>Supply, installation, servicing and maintenance</li>
+            <li>Fast-moving lab consumables and rapid test kits in stock</li>
+          </ul>
+          <a href="#services" class="btn btn--primary">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Our Core Services</h2>
+          <p>From the laboratory to the server room, we handle it all under one roof.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="svc reveal">
+            <div class="svc__img"><img data-slot="svc_medical" src="images/biosafety.jpg" alt="Biosafety cabinet" loading="lazy"></div>
+            <div class="svc__body">
+              <span class="svc__num">01</span>
+              <h3>Medical Equipment</h3>
+              <p>Supply of diagnostic and clinical equipment for hospitals, health centres and clinics, with installation and after-sales support.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <div class="svc__img"><img data-slot="svc_lab" src="images/svc-lab.jpg" alt="Laboratory instruments and consumables" loading="lazy"></div>
+            <div class="svc__body">
+              <span class="svc__num">02</span>
+              <h3>Medical &amp; Laboratory Accessories</h3>
+              <p>Laboratory instruments, reagents and consumables, including analyzers, microscopes, centrifuges, test kits, tubes and gloves.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <div class="svc__img"><img data-slot="svc_electrical" src="images/svc-electrical.jpg" alt="Electrical components and plumbing fittings" loading="lazy"></div>
+            <div class="svc__body">
+              <span class="svc__num">03</span>
+              <h3>Electrical &amp; Plumbing</h3>
+              <p>Electrical components, cabling, distribution boards and plumbing fittings, supplied and professionally installed.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <div class="svc__img"><img data-slot="svc_ac" src="images/svc-ac.jpg" alt="Air conditioning units" loading="lazy"></div>
+            <div class="svc__body">
+              <span class="svc__num">04</span>
+              <h3>Air Conditioning</h3>
+              <p>AC unit supply, installation and maintenance for offices, homes, laboratories and server rooms.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <div class="svc__img"><img data-slot="svc_ict" src="images/svc-ict.jpg" alt="ICT infrastructure and servers" loading="lazy"></div>
+            <div class="svc__body">
+              <span class="svc__num">05</span>
+              <h3>ICT Equipment &amp; Services</h3>
+              <p>Servers, networking equipment, computers and ICT infrastructure, supplied and set up for your organisation.</p>
+            </div>
+          </article>
+          <article class="svc svc--cta reveal">
+            <div class="svc__body">
+              <h3>Need something specific?</h3>
+              <p>Tell us what your facility needs and we'll source it, quote it and deliver it.</p>
+              <a href="#contact" class="btn btn--accent">Get a Free Quote</a>
+              <a href="https://wa.me/256756895960" target="_blank" rel="noopener" class="svc__wa">or chat on WhatsApp →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Products ===== -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Product Catalogue</span>
+          <h2>Laboratory Instruments &amp; Consumables</h2>
+          <p>A selection of the equipment and fast-moving supplies we provide. Contact us for pricing and availability.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist">
+          <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="tab" data-filter="instrument" role="tab" aria-selected="false">Instruments</button>
+          <button class="tab" data-filter="consumable" role="tab" aria-selected="false">Consumables &amp; Reagents</button>
+        </div>
+
+        <div class="products__grid" id="productGrid">
+          <!-- Instruments -->
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/hematology.jpg" alt="Mindray BC-20s Hematology Analyzer" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Mindray BC-20s Hematology Analyzer</h3><p>Automated 20-parameter analyzer for CBC, WBC, RBC and platelet analysis. Reliable diagnostics for small-to-medium labs.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/microscope.jpg" alt="Olympus CX23 Microscope" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Olympus CX23 Microscope</h3><p>Binocular LED microscope for routine diagnostics. Ergonomic brightfield optics for hematology &amp; microbiology.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/biochem.jpg" alt="Mindray BA-88A Biochemistry Analyzer" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Mindray BA-88A Biochemistry Analyzer</h3><p>Semi-automated clinical chemistry analyzer for glucose, lipids, liver and kidney function tests.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/centrifuge.jpg" alt="Hettich Centrifuge" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Hettich Centrifuge</h3><p>High-speed benchtop centrifuge for blood and sample separation. Quiet, safe, 4000 RPM with digital timer.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/incubator.jpg" alt="Memmert Incubator" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Memmert Incubator</h3><p>Precision incubator for bacterial culture. Digital temperature control 30 to 60°C for microbiology.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/biosafety.jpg" alt="Esco Biosafety Cabinet Class II" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Esco Biosafety Cabinet Class II</h3><p>Class II Type A2 cabinet with HEPA-filtered airflow for safe specimen handling and sterile work.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/autoclave.jpg" alt="Tuttnauer Autoclave 50L" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Tuttnauer Autoclave 50L</h3><p>Steam sterilizer with 50L capacity for sterilization of medical and laboratory instruments.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/fridge-glass.jpg" alt="Haier Biomedical Refrigerator" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Haier Biomedical Refrigerator</h3><p>Biomedical cold storage for vaccines, reagents and samples at 2 to 8°C.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/balance.jpg" alt="Ohaus Weighing Balance" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Ohaus Weighing Balance</h3><p>Precision, high-accuracy laboratory scale for weighing samples and reagents.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/ph-meter.jpg" alt="Hanna pH Meter" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Hanna pH Meter</h3><p>Digital pH measurement for laboratory solutions.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/spectro.jpg" alt="Shimadzu Spectrophotometer" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>Shimadzu Spectrophotometer</h3><p>UV-Vis analysis for chemical and biological samples.</p></div>
+          </div>
+          <div class="prod" data-cat="instrument">
+            <div class="prod__img"><img src="images/vortex.jpg" alt="IKA Vortex Mixer" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag">Instrument</span><h3>IKA Vortex Mixer</h3><p>High-speed mixing for tubes and samples.</p></div>
+          </div>
+
+          <!-- Consumables -->
+          <div class="prod" data-cat="consumable">
+            <div class="prod__img"><img src="images/slides.jpg" alt="Microscope Slides" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag prod__tag--alt">Consumable</span><h3>Microscope Slides</h3><p>Glass slides, box of 100, 75×25mm, frosted end for labelling.</p></div>
+          </div>
+          <div class="prod" data-cat="consumable">
+            <div class="prod__img"><img src="images/edta.jpg" alt="EDTA and serum tubes" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag prod__tag--alt">Consumable</span><h3>EDTA &amp; Serum Tubes</h3><p>EDTA K2 purple cap for hematology • Serum red cap for biochemistry.</p></div>
+          </div>
+          <div class="prod" data-cat="consumable">
+            <div class="prod__img"><img src="images/containers.jpg" alt="Sterile specimen containers" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag prod__tag--alt">Consumable</span><h3>Sterile Specimen Containers</h3><p>Urine container (120ml) &amp; stool container with spoon. Sterile and leak-proof.</p></div>
+          </div>
+          <div class="prod" data-cat="consumable">
+            <div class="prod__img"><img src="images/gloves.jpg" alt="Top Glove nitrile examination gloves" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag prod__tag--alt">Consumable</span><h3>Top Glove Examination Gloves</h3><p>Nitrile, powder-free, disposable. Sizes S to L, box of 100.</p></div>
+          </div>
+          <div class="prod" data-cat="consumable">
+            <div class="prod__img"><img src="images/malaria.jpg" alt="SD Bioline Malaria Ag RDT Kit" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag prod__tag--alt">Reagent</span><h3>SD Bioline Malaria Ag RDT Kit</h3><p>Malaria Ag Pf/Pan rapid test, 25 tests/kit, results in 15 to 20 minutes.</p></div>
+          </div>
+          <div class="prod" data-cat="consumable">
+            <div class="prod__img"><img src="images/hiv.jpg" alt="HIV 1/2 Rapid Test Kit" loading="lazy"></div>
+            <div class="prod__body"><span class="prod__tag prod__tag--alt">Reagent</span><h3>HIV 1/2 Rapid Test Kit</h3><p>Whole blood/serum/plasma, 30 tests/kit, CE marked.</p></div>
+          </div>
+        </div>
+
+        <div class="products__more reveal">
+          <p>Looking for something not listed? We stock many more fast-moving consumables and reagents.</p>
+          <a href="#contact" class="btn btn--primary">Ask for Full Price List</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why us ===== -->
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section__head section__head--light reveal">
+          <span class="eyebrow eyebrow--light">Why Choose Us</span>
+          <h2>Professional. Reliable. Innovative.</h2>
+        </div>
+        <div class="why__grid">
+          <div class="why__item reveal">
+            <div class="why__ico"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.5 3.4 10.3 8 11 4.6-.7 8-5.5 8-11V5l-8-3zm-1.2 14.2L7 12.4l1.4-1.4 2.4 2.4 4.8-4.8L17 10l-6.2 6.2z"/></svg></div>
+            <h3>Quality Brands</h3>
+            <p>Genuine equipment from globally recognised manufacturers you can rely on.</p>
+          </div>
+          <div class="why__item reveal">
+            <div class="why__ico"><svg viewBox="0 0 24 24"><path d="M22.7 19 13.6 9.9c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></div>
+            <h3>Installation &amp; Support</h3>
+            <p>We deliver, install, train your staff and maintain the equipment so you stay operational.</p>
+          </div>
+          <div class="why__item reveal">
+            <div class="why__ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11h-4V7h2v4h2v2z"/></svg></div>
+            <h3>Fast Response</h3>
+            <p>Quick quotations, prompt delivery in Kampala and responsive after-sales service.</p>
+          </div>
+          <div class="why__item reveal">
+            <div class="why__ico"><svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg></div>
+            <h3>All In One</h3>
+            <p>Medical, lab, electrical, plumbing, AC and ICT handled by one partner.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Brands ===== -->
+    <section class="brands">
+      <div class="container">
+        <p class="brands__label">Brands we supply</p>
+        <div class="brands__row">
+          <span>Mindray</span><span>Olympus</span><span>Hettich</span><span>Memmert</span><span>Esco</span><span>Tuttnauer</span><span>Haier Biomedical</span><span>Ohaus</span><span>Hanna</span><span>Shimadzu</span><span>IKA</span><span>SD Bioline</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <div>
+          <h2>Ready to equip your facility?</h2>
+          <p>Get a fast, no-obligation quotation from our team today.</p>
+        </div>
+        <div class="cta__actions">
+          <a href="tel:+256756895960" class="btn btn--white btn--lg">Call +256 756 895 960</a>
+          <a href="https://wa.me/256756895960" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Contact Us</h2>
+          <p>Send us your request and we'll get back to you as soon as possible.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="info">
+              <div class="info__ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+              <div><h3>Address</h3><p>P.O. Box 168844<br>Bukoto, Kampala, Uganda</p></div>
+            </div>
+            <div class="info">
+              <div class="info__ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div>
+              <div><h3>Phone</h3><p><a href="tel:+256756895960">+256 756 895 960</a><br><a href="tel:+256776017502">+256 776 017 502</a></p></div>
+            </div>
+            <div class="info">
+              <div class="info__ico"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg></div>
+              <div><h3>Email</h3><p><a href="mailto:infibirdconcepts@gmail.com">infibirdconcepts@gmail.com</a></p></div>
+            </div>
+            <div class="map">
+              <iframe title="Infibird Concepts location, Bukoto, Kampala" src="https://maps.google.com/maps?q=Bukoto%2C%20Kampala%2C%20Uganda&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+              <a class="map__link" href="https://www.google.com/maps/search/?api=1&amp;query=Bukoto%2C+Kampala%2C+Uganda" target="_blank" rel="noopener">Get directions in Google Maps →</a>
+            </div>
+          </div>
+
+          <form class="form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="bfad1d08-9f7d-43b9-b045-6eb48c244c14">
+            <input type="hidden" name="subject" value="New enquiry from Infibird Concepts website">
+            <input type="hidden" name="from_name" value="Infibird Concepts Website">
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+              </div>
+              <div class="field">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+256 ...">
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+              </div>
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option>Medical Equipment</option>
+                  <option>Laboratory Instruments</option>
+                  <option>Lab Consumables &amp; Reagents</option>
+                  <option>Electrical &amp; Plumbing</option>
+                  <option>Air Conditioning</option>
+                  <option>ICT Equipment &amp; Services</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us what you need (items, quantities, location)..."></textarea>
+            </div>
+            <!-- honeypot (spam trap) -->
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn--accent btn--lg btn--block">Send Message</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="brand brand--light">
+          <img src="images/logo.svg" alt="" width="42" height="42">
+          <span class="brand__text"><strong>INFIBIRD</strong><small>CONCEPTS LIMITED</small></span>
+        </a>
+        <p class="footer__about">For Medical Equipment, Lab Equipment &amp; Consumables, ICT Equipment and Services. Your trusted partner for engineering solutions.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Medical Equipment</li>
+          <li>Lab Equipment &amp; Consumables</li>
+          <li>Electrical &amp; Plumbing</li>
+          <li>Air Conditioning</li>
+          <li>ICT Services</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>P.O. Box 168844, Bukoto, Kampala</li>
+          <li><a href="tel:+256756895960">+256 756 895 960</a></li>
+          <li><a href="tel:+256776017502">+256 776 017 502</a></li>
+          <li><a href="mailto:infibirdconcepts@gmail.com">infibirdconcepts@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-in"><span>© <span id="year">2026</span> Infibird Concepts Limited. All rights reserved.</span><a href="admin/" class="footer__staff" rel="nofollow">Staff Login</a></div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/256756895960?text=Hello%20Infibird%20Concepts%2C%20I%27d%20like%20to%20make%20an%20enquiry." class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.2c1.9 1.1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.3 1.3-4-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7C5.4 9.8 10.2 5 16 5s10.6 4.8 10.6 10.6S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.8 5.1 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script>
+(function () {
+  "use strict";
+
+  var header = document.getElementById("header");
+  var burger = document.getElementById("burger");
+  var nav = document.getElementById("nav");
+  var toTop = document.getElementById("toTop");
+  var links = Array.prototype.slice.call(document.querySelectorAll(".nav__link"));
+
+  /* ---- Year ---- */
+  var y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+
+  /* ---- Mobile menu ---- */
+  function closeMenu() {
+    nav.classList.remove("open");
+    burger.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+  }
+  burger.addEventListener("click", function () {
+    var open = !nav.classList.contains("open");
+    nav.classList.toggle("open", open);
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    document.body.classList.toggle("menu-open", open);
+  });
+  nav.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeMenu); });
+  window.addEventListener("resize", function () { if (window.innerWidth > 960) closeMenu(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeMenu(); });
+
+  /* ---- Header shadow, back-to-top, active link ---- */
+  var sections = links
+    .map(function (l) { return document.querySelector(l.getAttribute("href")); })
+    .filter(Boolean);
+
+  function onScroll() {
+    var s = window.scrollY;
+    header.classList.toggle("scrolled", s > 10);
+    toTop.classList.toggle("show", s > 600);
+
+    var pos = s + 120, current = sections[0];
+    sections.forEach(function (sec) { if (sec.offsetTop <= pos) current = sec; });
+    links.forEach(function (l) {
+      l.classList.toggle("active", current && l.getAttribute("href") === "#" + current.id);
+    });
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+  /* ---- Reveal on scroll ---- */
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ---- Product filter ---- */
+  var tabs = document.querySelectorAll(".tab");
+  var currentFilter = "all";
+  function applyFilter() {
+    document.querySelectorAll(".prod").forEach(function (p) {
+      p.classList.toggle("hide", currentFilter !== "all" && p.getAttribute("data-cat") !== currentFilter);
+    });
+  }
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      currentFilter = tab.getAttribute("data-filter");
+      tabs.forEach(function (t) {
+        t.classList.toggle("active", t === tab);
+        t.setAttribute("aria-selected", String(t === tab));
+      });
+      applyFilter();
+    });
+  });
+
+  /* ---- Load admin-managed content (photos + products) ----
+     Edited from /admin. If the file can't be loaded, the built-in content stays. */
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  fetch("data/content.json?v=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+    .then(function (data) {
+      var slots = data.slots || {};
+      document.querySelectorAll("img[data-slot]").forEach(function (img) {
+        var s = slots[img.getAttribute("data-slot")];
+        if (s && s.image) img.src = s.image;
+      });
+      if (Array.isArray(data.products) && data.products.length) {
+        document.getElementById("productGrid").innerHTML = data.products.map(function (p) {
+          var cat = p.category === "consumable" ? "consumable" : "instrument";
+          return '<div class="prod" data-cat="' + cat + '">' +
+            '<div class="prod__img"><img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy"></div>' +
+            '<div class="prod__body"><span class="prod__tag' + (cat === "consumable" ? " prod__tag--alt" : "") + '">' + esc(p.tag) + '</span>' +
+            '<h3>' + esc(p.name) + '</h3><p>' + esc(p.desc) + '</p></div></div>';
+        }).join("");
+        applyFilter();
+      }
+    })
+    .catch(function () { /* keep built-in content */ });
+
+  /* ---- Contact form ---- */
+  var form = document.getElementById("contactForm");
+  var status = document.getElementById("formStatus");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.className = "form__status";
+      status.textContent = "";
+
+      var ok = true;
+      ["name", "phone", "message"].forEach(function (id) {
+        var el = form.elements[id];
+        var bad = !el.value.trim();
+        el.parentElement.classList.toggle("invalid", bad);
+        if (bad) ok = false;
+      });
+      var email = form.elements.email;
+      if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        email.parentElement.classList.add("invalid"); ok = false;
+      } else { email.parentElement.classList.remove("invalid"); }
+
+      if (!ok) {
+        status.classList.add("err");
+        status.textContent = "Please fill in the required fields correctly.";
+        return;
+      }
+
+      var btn = form.querySelector("button[type=submit]");
+      btn.disabled = true;
+      btn.textContent = "Sending...";
+
+      var data = new FormData(form);
+      data.set("subject", "Website enquiry: " + form.elements.service.value + " from " + form.elements.name.value.trim());
+
+      fetch(form.action, { method: "POST", body: data, headers: { "Accept": "application/json" } })
+        .then(function (r) { return r.json(); })
+        .then(function (res) {
+          if (res && res.success) {
+            status.classList.add("ok");
+            status.textContent = "Thank you! Your message has been sent. We'll get back to you shortly.";
+            form.reset();
+          } else {
+            throw new Error((res && res.message) || "Failed");
+          }
+        })
+        .catch(function () {
+          status.classList.add("err");
+          status.innerHTML = 'Sorry, the message could not be sent. Please try again or call <a href="tel:+256756895960">+256 756 895 960</a>.';
+        })
+        .finally(function () {
+          btn.disabled = false;
+          btn.textContent = "Send Message";
+        });
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
